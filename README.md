@@ -40,4 +40,9 @@ the true values are known. It allows the visualization of the performance of an 
 
 Accuracy =    ( TP + TN ) / ( TP + FP + TN + FN )
 
-        
+# RSS AND TSS
+
+A fitted regression model uses the parameters to generate point estimate predictions which are the means of observed responses if you were to replicate the study with the same 𝑋
+X
+ values an infinite number of times (and when the linear model is true). The difference between these predicted values and the ones used to fit the model are called "residuals" which, when replicating the data collection process, have properties of random variables with 0 means.
+**Residual Standard Error (RSS)** 
