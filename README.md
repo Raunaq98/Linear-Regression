@@ -48,4 +48,5 @@ X
 
 **Residual Standard Error (RSE)** is the average amount the response will deviate away from the true value. It is a measure of lack of fit.
 
-                   <a href="https://www.codecogs.com/eqnedit.php?latex=RSE&space;=&space;\sqrt{RSS/(n-2)}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?
+                  RSE = sqrt ( RSE / (n-2) )
+                  
