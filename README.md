@@ -45,4 +45,7 @@ Accuracy =    ( TP + TN ) / ( TP + FP + TN + FN )
 A fitted regression model uses the parameters to generate point estimate predictions which are the means of observed responses if you were to replicate the study with the same 𝑋
 X
  values an infinite number of times (and when the linear model is true). The difference between these predicted values and the ones used to fit the model are called "residuals" which, when replicating the data collection process, have properties of random variables with 0 means.
-**Residual Standard Error (RSS)** 
+
+**Residual Standard Error (RSE)** is the average amount the response will deviate away from the true value. It is a measure of lack of fit.
+
+                   <a href="https://www.codecogs.com/eqnedit.php?latex=RSE&space;=&space;\sqrt{RSS/(n-2)}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?
