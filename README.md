@@ -56,3 +56,4 @@ Instead of adding the actual value’s difference from the predicted value, in t
                     
                      R² = 1 - RSS/TSS
                   
+**p-values** are used to discard  NULL hypothesis. Lower the value of P-values, better is that feature for our model.
