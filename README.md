@@ -40,13 +40,19 @@ the true values are known. It allows the visualization of the performance of an 
 
 Accuracy =    ( TP + TN ) / ( TP + FP + TN + FN )
 
-# RSS AND TSS
+# ERRORS
 
 A fitted regression model uses the parameters to generate point estimate predictions which are the means of observed responses if you were to replicate the study with the same 𝑋
 X
  values an infinite number of times (and when the linear model is true). The difference between these predicted values and the ones used to fit the model are called "residuals" which, when replicating the data collection process, have properties of random variables with 0 means.
 
+**Residual Sum of squares (RSS)** — Here the cost function is the (y(i) — y(pred))² which is minimized to find that value of β0 and β1, to find that best fit of the predicted line. This is an absolute difference between the actual y and the predicted y. Now, if the units of the actual y and predicted y changes the RSS will change. So, we use the relative term R².
+
 **Residual Standard Error (RSE)** is the average amount the response will deviate away from the true value. It is a measure of lack of fit.
 
-                  RSE = sqrt ( RSE / (n-2) )
+Instead of adding the actual value’s difference from the predicted value, in the **Total Sum of Squares (TSS)**, we find the difference from the mean y the actual value.
+
+**R- squared value** is the proportion of variance in the model. It varies between 0 and 1. higher the value of R², greater if the fit.
+                    
+                     R² = 1 - RSS/TSS
                   
