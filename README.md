@@ -68,3 +68,10 @@ Instead of training the model on all variables, we usse a subset of all availabl
           We then fit 1 variable. when we have 2 variables, we chose that combination of two variables 
           from total n variables that has the highest R² value. Similarly for 3,4...n we find the best combinations.
           We then choose the combination out of these based on the highest adjusted R² value.
+          
+          2. Forward step-wise selection : For computational reasons, the best subset cannot be applied for any 
+          large n due to the 2ncomplexity. Forward Stepwise begins with a model containing no predictors, 
+          and then adds predictors to the model, one at the time. At each step, the variable that gives 
+          the greatest additional improvement to the fit is added to the model selected in the previous step.
+          
+          3. Backward step-wise selection : We start with all variable and keep removing them one by one
