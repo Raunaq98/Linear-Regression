@@ -63,4 +63,7 @@ Instead of adding the actual value’s difference from the predicted value, in t
 
 Instead of training the model on all variables, we usse a subset of all available variables. It is of three types :
 
-          1. Best Subset Selection :  We fit separate models for each possible combination of the n predictors and then select the best subset. At first, we fit 0 variables ie. NULL model. We then fit 1 variable. when we have 2 variables, we chose that combination of two variables from total n variables that has the highest R² value. Similarly for 3,4...n we find the best combinations. We then choose the combination out of these based on the highest adjusted R² value.
+          1. Best Subset Selection :  We fit separate models for each possible combination of the n predictors and then select the best subset.
+          At first, we fit 0 variables ie. NULL model. We then fit 1 variable. when we have 2 variables, we chose that combination of two variables 
+          from total n variables that has the highest R² value. Similarly for 3,4...n we find the best combinations. We then choose the 
+          combination out of these based on the highest adjusted R² value.
