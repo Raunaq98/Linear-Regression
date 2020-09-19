@@ -75,3 +75,9 @@ Instead of training the model on all variables, we usse a subset of all availabl
           the greatest additional improvement to the fit is added to the model selected in the previous step.
           
           3. Backward step-wise selection : We start with all variable and keep removing them one by one
+
+# Shrinkage Methods
+
+These methods involve all n predictors. However, the estimated coefficients are shrunked towards a zero relative. Two types are :
+          
+          1. Ridge Regression : 
