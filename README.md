@@ -84,6 +84,16 @@ Ridge Regression is a technique for analyzing multiple regression data that suff
 
 Regression involves minimising the sum of squared residuals. In case of **Ridge Regression**, we minimise :
 
-          Ridge Regression : min( sum of squared residuals         AND      [lambda] x [Slope²]  )
+          Ridge Regression : min( sum of squared residuals    +    [lambda] x [Slope²]  )
           
+where **Slope²** adds a penalty and **lamba** (tuning parameter) determines how severe it is. As a result, ridge tries to fit a line that
+has a lower slope ie. lower sensitivity of y on x. Higher the value of lambda, the lower is the slope of the fit line.
+
+The disadvantage is that it includes all n predictor variables in the analysis. This is handled using the **Laso Regression**.
+
+# Laso Regression
+Instead of square of slope, we use its absolute value.
+
+          Ridge Regression : min( sum of squared residuals    +    [lambda] x |Slope|  )
+
           
