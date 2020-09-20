@@ -76,8 +76,14 @@ Instead of training the model on all variables, we usse a subset of all availabl
           
           3. Backward step-wise selection : We start with all variable and keep removing them one by one
 
-# Shrinkage Methods
+# Ridge Regression
 
-These methods involve all n predictors. However, the estimated coefficients are shrunked towards a zero relative. Two types are :
+**Multicollinearity** is a phenomenon in which one predictor variable in a multiple regression model can be linearly predicted from the others with a substantial degree of accuracy. In this situation, the coefficient estimates of the  multiple regression may change erratically in response to small changes in the model or the data. 
           
-          1. Ridge Regression : 
+Ridge Regression is a technique for analyzing multiple regression data that suffer from multicollinearity. When multicollinearity occurs, least squares estimates are unbiased, but their **variances are large** so they may be far from the true value. By **adding a degree of bias** to the regression estimates, ridge regression reduces the standard errors. The problem with linear regression is that the model usually ovefits to training data leading to high variance. 
+
+Regression involves minimising the sum of squared residuals. In case of **Ridge Regression**, we minimise :
+
+          Ridge Regression : min( sum of squared residuals         AND      [lambda] x [Slope²]  )
+          
+          
