@@ -19,18 +19,6 @@ The linear Regression model works to find ßº and ß1 such that **sum(e^2) is m
         
         ß1 = mean(y) - ( ßº * mean(x))
         
-# Confusion Matrix
-
-We evaluate the model performace using a **confusion matrix**.
-**Confusion Matrix** is a table that is often used to describe the performance of a classification model on a set of test data for which 
-the true values are known. It allows the visualization of the performance of an algorithm.
-    
-|    . | Predicted NO | Predicted YES|
-|------| -------------|---------------|
-|Actual NO| TN | FP |
-|Actual YES | FN | TP |
-
-Accuracy =    ( TP + TN ) / ( TP + FP + TN + FN )
 
 # ERRORS
 
